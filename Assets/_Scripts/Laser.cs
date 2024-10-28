@@ -10,7 +10,6 @@ public class Laser : MonoBehaviour
     Vector3 randomScale;
     public float rRange = 180;
     public float yRange = 3f;
-    public float Speed = 3.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +45,7 @@ public class Laser : MonoBehaviour
             }
             else
             {
-                transform.position -= Vector3.right * Speed * Time.deltaTime;
+                transform.position -= Vector3.right * GameManager.Speed * Time.deltaTime;
             }
         }
         else
@@ -66,7 +65,7 @@ public class Laser : MonoBehaviour
             }
             else
             {
-                transform.position -= Vector3.up * Speed * Time.deltaTime;
+                transform.position -= Vector3.up * GameManager.Speed * Time.deltaTime;
             }
         }
     }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class UpHall2 : MonoBehaviour
 {
-    public float Speed = 3.0f;
     public static int test = 0;
     void Update()
     {
@@ -19,7 +18,7 @@ public class UpHall2 : MonoBehaviour
         }
         else
         {
-            transform.position -= Vector3.up * Speed * Time.deltaTime;
+            transform.position -= Vector3.up * GameManager.Speed * Time.deltaTime;
         }
     }
 }
