@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 public class HallWays : MonoBehaviour
 {
+    public static int hallspace = 0;
     void Update()
     {
-        if (GameManager.ScoreEvent == true && GameManager.remainder < 0)
+        if (GameManager.ScoreEvent == false && CurveHorizontal.passed2 == false)
         {
             if (transform.position.x < -21f)
             {
@@ -15,12 +16,20 @@ public class HallWays : MonoBehaviour
             {
                 transform.position -= Vector3.right * GameManager.Speed * Time.deltaTime;
             }
+            if (transform.position.x < -0.22)
+            {
+                hallspace++;
+            }
         }
         else
         {
             if (transform.position.x > -21f)
             {
                 transform.position -= Vector3.right * GameManager.Speed * Time.deltaTime;
+            }
+            else
+            {
+                hallspace = 0;
             }
         }
     }

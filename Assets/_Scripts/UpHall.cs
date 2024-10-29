@@ -11,11 +11,18 @@ public class UpHall : MonoBehaviour
             transform.position = new Vector3(-1, 19.57f, transform.position.z);
             test++;
         }
-        if (transform.position.y < -21f)
+        if (CurveHall.Passed == true && GameManager.ScoreEvent2 == false && GameManager.ScoreEvent == true)
         {
-            transform.position = new Vector3(transform.position.x, 19.57f, transform.position.z);
+            if (transform.position.y < -21f)
+            {
+                transform.position = new Vector3(transform.position.x, 19.57f, transform.position.z);
+            }
+            else
+            {
+                transform.position -= Vector3.up * GameManager.Speed * Time.deltaTime;
+            }
         }
-        else
+        if (GameManager.ScoreEvent == false)
         {
             transform.position -= Vector3.up * GameManager.Speed * Time.deltaTime;
         }

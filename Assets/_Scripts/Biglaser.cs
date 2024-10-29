@@ -6,9 +6,13 @@ public class Biglaser : MonoBehaviour
 {
     void Update()
     {
-        if (CurveHall.Passed == true && UpHall.test < 1)
+        if (CurveHall.Passed == true)
         {
-            transform.position = new Vector3(8.4f, -3, transform.position.z);
+            transform.position = new Vector3(-8.7f, -3, transform.position.z);
+        }
+        if (GameManager.ScoreEvent2 == true)
+        {
+            transform.position = new Vector3(15, -3, transform.position.z);
         }
     }
 }

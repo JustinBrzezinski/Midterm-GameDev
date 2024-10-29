@@ -6,16 +6,18 @@ using UnityEngine.UIElements;
 public class CurveHall : MonoBehaviour
 {
     public static bool Passed = false;
+    public static int onetrigger = 0;
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.remainder == 0 && GameManager.ScoreEvent == true)
+        if (GameManager.ScoreEvent == true && onetrigger < 1)
         {
-            transform.position = new Vector3(30, transform.position.y, transform.position.z);
+            transform.position = new Vector3(30, 1.33f, transform.position.z);
+            onetrigger++;
         }
-        if (GameManager.remainder > 0)
+        if (GameManager.ScoreEvent == true)
         {
-            if (transform.position.x > -13f)
+            if (transform.position.x > -5f)
             {
                 transform.position -= Vector3.right * GameManager.Speed * Time.deltaTime;
             }
@@ -28,6 +30,10 @@ public class CurveHall : MonoBehaviour
                 if (transform.position.y < -7)
                 {
                     Passed = true;
+                }
+                if (transform.position.y < -22)
+                {
+                    transform.position = new Vector3(-6, -70, transform.position.z);
                 }
             }
         }

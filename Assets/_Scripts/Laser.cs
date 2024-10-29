@@ -28,7 +28,7 @@ public class Laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (UpHall.test < 1)
+        if (GameManager.ScoreEvent == false)
         {
             if (transform.position.x < -21f)
             {
@@ -55,7 +55,7 @@ public class Laser : MonoBehaviour
                 float scale = Random.Range(0.5f, 1.2f);
                 float rPosition = Random.Range(0 - rRange, 1 + rRange);
                 float yPosition = Random.Range(15, 30);
-                float xPosition = Random.Range(-10, 10);
+                float xPosition = Random.Range(-5, 5);
                 randomPosition = new Vector3(xPosition, yPosition, 10.3f);
                 randomRotation = new Vector3(0, 0, rPosition);
                 randomScale = new Vector3(scale, scale, scale);
