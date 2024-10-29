@@ -10,57 +10,62 @@
 ---
 
 # Required ReadMe Info for ALL MCS1243 Projects
-* **Project**   - 
-* **Your Name** - 
-* **Date**      - 
+* **Project**   - Midterm
+* **Your Name** - Justin Brzezinski
+* **Date**      -  10/30/24
 
 <br>
 
 1. **What are the controls to your game? How do we play?**
-
-
+Up arrow = move up
+Down arrow = dash downwards
+left and right arrows = move left and right
 
 <br>
 
 2. **What creative additions did you make? How can we find them?**
-
+More unique hallways added an up section. You can find this in normal gameplay
+left, right, and down movement
 
 
 <br>
 
 3. **Any assets used that you didn't create yourself?** <br> (art, music, etc. Just tell us where you got it, link it here)
+https://assetstore.unity.com/packages/3d/environments/sci-fi/modular-sci-fi-corridor-142811 
+https://assetstore.unity.com/packages/3d/characters/humanoids/mini-simple-characters-free-demo-262799 
+https://assetstore.unity.com/packages/tools/particles-effects/volumetric-lines-29160 
+https://assetstore.unity.com/packages/3d/props/tools/low-poly-casual-sci-fi-jet-pack-287903 
 
-Robot Crush font https://www.dafont.com/robot-crush.font
 
 <br>
 
 4. **Did you receive help from anyone outside this class?** <br> (list their names and what they helped with)
-
+no
 
 
 <br>
 
 5. **Did you get help from any AI Code Assistants?** <br> (Tell us which .cs file to look in for the citation and describe what you learned)
 
-
+No
 
 <br>
 
 6. **Did you get help from any online websites, videos, or tutorials?** <br> (link them here)
 
-
+No
 
 <br>
 
 7. **What trouble did you have with this project?**
-
+Coding it, managing time better
 
 
 <br>
 
 8. **Is there anything else we should know?**
 
-
+no
 
 
 <br><br><br><br><br>
